@@ -2,15 +2,15 @@ package com.cydeo.entity;
 
 
 import com.cydeo.enums.WeekDays;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class Course extends BaseEntity{
 
     private String name;

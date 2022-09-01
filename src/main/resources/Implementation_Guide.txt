@@ -1,0 +1,30 @@
+*Before writing code, check the Common git&github update cycle image provided in the discord group channel.
+
+*Write your codes in your own branch.
+
+*Main responsibility for all developers is implementing all CRUD methods successfully.
+
+*We are going to have two important branch dev and test other than master.
+
+*We are going to merge our codes first in the dev branch, after review. (for the dev branch we should ask for 1 reviewer).
+
+*Do not merge anything to the test branch. It will be explained later.
+
+*How to create implementation classes and methods?
+
+        Example:
+            public class CourseService implements CRUDService<Course> {
+                @Override
+                public Course findById(int id) {
+                    return Database.courseList.stream()
+                            .filter(course -> course.id == id)
+                            .findFirst().orElseThrow();
+                }
+            }
+
+*After you created your methods you can test your methods. It will be explained.
+
+*Branch management and merging process is important. Pay attention.
+
+*Whenever you need any help, do not hesitate to reach me.
+
