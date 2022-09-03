@@ -4,6 +4,10 @@ import lombok.*;
 
 import java.util.List;
 
+/**
+ * I could not see any progress on the service methods of School entity Esmira.
+ */
+
 @Getter
 @Setter
 @NoArgsConstructor
