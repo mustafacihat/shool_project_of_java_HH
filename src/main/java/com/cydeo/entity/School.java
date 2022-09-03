@@ -6,6 +6,9 @@ import java.util.List;
 
 /**
  * I could not see any progress on the service methods of School entity Esmira.
+ * I could not see any progress on the service methods of School entity Alena.
+ * Come together your pairs and try to write your code.
+ * You can check your codes inside main method which created inside SchoolMainRunner
  */
 
 @Getter
