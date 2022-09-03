@@ -6,6 +6,13 @@ import lombok.*;
 
 import java.util.List;
 
+/**
+ * I could not see any progress on the service methods of Course entity Hamza.
+ * I could not see any progress on the service methods of Course entity Sabina.
+ * Come together your pairs and try to write your code.
+ * You can check your codes inside main method which created inside SchoolMainRunner
+ */
+
 @Getter
 @Setter
 @NoArgsConstructor
