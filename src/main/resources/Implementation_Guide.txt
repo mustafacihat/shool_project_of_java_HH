@@ -28,3 +28,6 @@
 
 *Whenever you need any help, do not hesitate to reach me.
 
+*YOU KNOW THE SCHOOLMAINRUNNER class is a common class that you can check your methods inside that class in main method.
+But please uncheck your SchoolMainRunner class when you commit and push your codes to dev remote branch!!!!!!!
+
