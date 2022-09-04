@@ -29,6 +29,12 @@ public class StudentService implements CRUDService<Student>{
 
     @Override
     public void update(Student student) {
+        Database.studentList.stream()
+                        .filter(student1 -> student1.getId()==student.getId())
+                                .forEach(student1 -> {
+                                    student1.setFirstName(student.getFirstName());
+                                    student1.setLastName(student.getLastName());
+                                });
         save(student);
     }
 
