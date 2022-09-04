@@ -25,7 +25,7 @@ public class SchoolMainRunner {
     }
 
 public static void abc(CRUDService crudService){
-        if (SchoolService.)
+    //    if (SchoolService.)
 
 }
 }
