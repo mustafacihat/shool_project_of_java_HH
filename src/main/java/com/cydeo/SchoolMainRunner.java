@@ -1,5 +1,9 @@
 package com.cydeo;
 
+import com.cydeo.entity.School;
+import com.cydeo.service.CRUDService;
+import com.cydeo.service.SchoolService;
+
 public class SchoolMainRunner {
 
 //    public static CRUDService<School> schoolService;
@@ -17,7 +21,11 @@ public class SchoolMainRunner {
     public static void main(String[] args) {
 
 
+
     }
 
+public static void abc(CRUDService crudService){
+        if (SchoolService.)
 
+}
 }
