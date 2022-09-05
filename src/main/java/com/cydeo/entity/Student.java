@@ -14,7 +14,6 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 public class Student  extends BaseEntity{
 
     private Long studentNumber;
@@ -30,5 +29,16 @@ public class Student  extends BaseEntity{
         this.lastName = lastName;
         this.parent = parent;
         this.courses = courses;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" + "id= " + id +
+                "studentNumber=" + studentNumber +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", parent=" + parent +
+                ", courses=" + courses +
+                '}';
     }
 }
