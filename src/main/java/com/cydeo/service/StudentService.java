@@ -23,25 +23,28 @@ public class StudentService implements CRUDService<Student>{
     @Override
     public void save(Student student) {
         Database.studentList.add(student);
-        System.out.println(Database.studentList);
-
     }
 
     @Override
     public void update(Student student) {
-        Database.studentList.stream()
-                        .filter(student1 -> student1.getId()==student.getId())
-                                .forEach(student1 -> {
-                                    student1.setFirstName(student.getFirstName());
-                                    student1.setLastName(student.getLastName());
-                                });
-        save(student);
+        deleteById((long) student.getId());
+        Database.studentList.add(student);
+//        Database.studentList.stream()
+//                        .filter(student1 -> student1.getId()==student.getId())
+//                                .forEach(student1 -> {
+//                                    student1.setFirstName(student.getFirstName());
+//                                    student1.setLastName(student.getLastName());
+//                                });
+//        save(student);
     }
 
     @Override
     public void deleteById(Long id) {
-        Database.studentList.removeIf(student -> student.getId()==id);
-        System.out.println(Database.studentList);
+        Student student = findById(id.intValue());
+        Database.studentList.remove(student);
+
+//        Database.studentList.removeIf(student -> student.getId()==id); // throw exception
+//        System.out.println(Database.studentList);
 
 
 //        Database.studentList.stream()
