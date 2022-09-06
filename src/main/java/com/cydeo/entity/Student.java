@@ -4,11 +4,16 @@ import lombok.*;
 
 import java.util.List;
 
+/**
+ * I could not see any progress on the service methods of Student entity Mizgin.
+ * I could not see any progress on the service methods of Student entity Tatiana.
+ * Come together your pairs and try to write your code.
+ * You can check your codes inside main method which created inside SchoolMainRunner
+ */
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 public class Student  extends BaseEntity{
 
     private Long studentNumber;
@@ -24,5 +29,16 @@ public class Student  extends BaseEntity{
         this.lastName = lastName;
         this.parent = parent;
         this.courses = courses;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" + "id= " + id +
+                "studentNumber=" + studentNumber +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", parent=" + parent +
+                ", courses=" + courses +
+                '}';
     }
 }
