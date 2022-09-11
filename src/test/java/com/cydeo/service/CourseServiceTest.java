@@ -14,4 +14,12 @@ class CourseServiceTest {
         CRUDService<Course> courseCRUDService = new CourseService();
         assertEquals(3, courseCRUDService.findAll().size());
     }
+
+    @Test
+    void testFindById() {
+        CRUDService<Course> courseCRUDService = new CourseService();
+        Course byId = courseCRUDService.findById(1);
+        assertEquals("English", byId.getName());
+    }
+
 }
